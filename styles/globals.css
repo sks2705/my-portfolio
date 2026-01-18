@@ -1,0 +1,208 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Light theme — Neural Minimal */
+  --bg-primary: #f4f5fb;
+  --bg-secondary: rgba(255, 255, 255, 0.92);
+  --bg-tertiary: #e5e7f5;
+
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #94a3b8;
+
+  --accent-primary: #4f46e5;
+  --accent-secondary: #06b6d4;
+  --accent-soft: #e0e7ff;
+
+  --border-color: rgba(148, 163, 184, 0.35);
+  --shadow-soft: 0 18px 45px rgba(15, 23, 42, 0.10);
+
+  --button-radius: 10px;
+}
+
+/* Dark theme variables applied when .dark class is present */
+.dark {
+  --bg-primary: #020617;
+  --bg-secondary: rgba(15, 23, 42, 0.9);
+  --bg-tertiary: #020617;
+
+  --text-primary: #e5e7eb;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+
+  --accent-primary: #6366f1;
+  --accent-secondary: #22d3ee;
+  --accent-glow: rgba(99, 102, 241, 0.35);
+
+  --border-color: rgba(30, 64, 175, 0.7);
+  --shadow-glow: 0 0 40px rgba(99, 102, 241, 0.35);
+}
+
+html, body, #__next {
+  height: 100%;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+main {
+  background-color: var(--bg-primary);
+}
+
+.animated-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 10% 20%, rgba(129, 140, 248, 0.22), transparent 55%),
+    radial-gradient(circle at 90% 80%, rgba(56, 189, 248, 0.2), transparent 55%),
+    radial-gradient(circle at 50% 10%, rgba(244, 244, 245, 0.6), transparent 55%);
+  animation: floatGradient 22s ease-in-out infinite alternate;
+  opacity: 0.9;
+}
+
+.dark .animated-bg {
+  background:
+    radial-gradient(circle at 10% 10%, rgba(56, 189, 248, 0.26), transparent 60%),
+    radial-gradient(circle at 90% 90%, rgba(129, 140, 248, 0.3), transparent 60%),
+    radial-gradient(circle at 50% 0%, rgba(15, 23, 42, 0.9), transparent 65%);
+}
+
+@keyframes floatGradient {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(-12px, 8px, 0) scale(1.03);
+  }
+  100% {
+    transform: translate3d(12px, -6px, 0) scale(1.02);
+  }
+}
+
+/* Card utilities */
+.card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-soft);
+  border-radius: 16px;
+}
+
+.glass-card {
+  background: var(--bg-secondary);
+  border-radius: 18px;
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  box-shadow: var(--shadow-soft);
+  backdrop-filter: blur(18px);
+}
+
+.dark .glass-card {
+  border-color: rgba(148, 163, 184, 0.28);
+}
+
+/* Logo gradient */
+.logo { background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary)); }
+
+/* Accent button */
+.btn-accent {
+  background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary));
+  color: white;
+  border-radius: var(--button-radius);
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid var(--accent-primary);
+  color: var(--accent-primary);
+  border-radius: var(--button-radius);
+}
+
+/* Tag/badge styles */
+.badge-light {
+  background: var(--accent-soft);
+  color: #4338CA;
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+}
+
+.badge-dark {
+  background: rgba(99,102,241,0.15);
+  color: #A5B4FC;
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+}
+
+/* Glow on hover for cards in dark mode */
+.dark .card:hover {
+  box-shadow: var(--shadow-glow);
+}
+
+.dark .glass-card:hover {
+  box-shadow: var(--shadow-glow);
+}
+
+/* header border uses theme variable */
+header { border-bottom: 1px solid var(--border-color); }
+
+/* Small typography helpers */
+.lead { color: var(--text-secondary); }
+.muted { color: var(--text-muted); }
+
+.snapshot-chip {
+  border-radius: 9999px;
+  padding: 0.4rem 0.9rem;
+  border: 1px solid rgba(129, 140, 248, 0.6);
+  background: radial-gradient(circle at top left, rgba(129, 140, 248, 0.16), transparent);
+  color: #1f2937;
+}
+
+.dark .snapshot-chip {
+  color: #e5e7eb;
+  border-color: rgba(191, 219, 254, 0.7);
+  background: radial-gradient(circle at top left, rgba(56, 189, 248, 0.12), transparent);
+}
+
+.pill {
+  border-radius: 9999px;
+  padding: 0.25rem 0.6rem;
+  background: rgba(148, 163, 184, 0.12);
+  color: var(--text-secondary);
+}
+
+.mini-stat {
+  border-radius: 12px;
+  padding: 0.6rem 0.5rem;
+  border: 1px dashed rgba(148, 163, 184, 0.6);
+}
+
+.mini-stat .label {
+  font-size: 0.65rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.mini-stat .value {
+  margin-top: 0.25rem;
+  font-size: 0.95rem;
+}
+
+.skill-tab {
+  border-radius: 9999px;
+  padding: 0.15rem 0.6rem;
+}
+
+/* Progress gradient for skills */
+.skill-gradient { background: linear-gradient(90deg, #4F46E5, #06B6D4); }
+
+/* Focus ring */
+:focus { outline: 3px solid rgba(99,102,241,0.4); outline-offset: 2px; }
+
