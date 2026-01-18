@@ -5,7 +5,7 @@ export default function ProjectCard({ project }: { project: any }) {
   const techList = (project.technologies || []).slice(0, 3)
 
   return (
-    <div className="card p-4">
+    <div className="glass-card p-4 transition-transform duration-200 hover:-translate-y-1">
       <h4 className="font-medium mb-1">{project.title}</h4>
       <p className="text-sm muted mb-3">{project.description}</p>
       <div className="flex flex-wrap gap-2 mb-3">

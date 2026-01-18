@@ -16,10 +16,10 @@ export default function Contact() {
   }
   return (
     <section id="contact" className="max-w-[1200px] mx-auto px-6 md:px-8 py-12">
-      <div className="card p-6 md:p-8">
+      <div className="glass-card p-6 md:p-8">
         <div className="grid md:grid-cols-2 gap-6">
           <div>
-            <div className="text-lg font-medium mb-1">Contact</div>
+            <div className="text-lg font-medium mb-1 gradient-text">Contact</div>
             <div className="muted mb-4">{info.availability}</div>
             <div className="grid grid-cols-2 gap-3 mb-6">
               {social.github ? (
@@ -46,9 +46,9 @@ export default function Contact() {
             <div className="muted text-sm">{info.responseTime}</div>
           </div>
           <form className="grid gap-3">
-            <input className="border rounded-md px-3 py-2 bg-white" placeholder="Name" />
-            <input className="border rounded-md px-3 py-2 bg-white" placeholder="Email" type="email" />
-            <textarea className="border rounded-md px-3 py-2 bg-white" placeholder="Message" rows={4} />
+            <input className="border border-white/10 rounded-md px-3 py-2 bg-slate-900/60 text-gray-50 placeholder:text-gray-500" placeholder="Name" />
+            <input className="border border-white/10 rounded-md px-3 py-2 bg-slate-900/60 text-gray-50 placeholder:text-gray-500" placeholder="Email" type="email" />
+            <textarea className="border border-white/10 rounded-md px-3 py-2 bg-slate-900/60 text-gray-50 placeholder:text-gray-500" placeholder="Message" rows={4} />
             <button className="btn-accent px-4 py-2">Send Message</button>
           </form>
         </div>

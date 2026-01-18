@@ -16,7 +16,7 @@ export default async function LeetCodeStats() {
     <section id="leetcode" className="max-w-[1200px] mx-auto px-6 md:px-8 py-12">
       <div className="flex items-center justify-between gap-4 mb-6">
         <div>
-          <h2 className="text-2xl font-semibold mb-1">Problem Solving &amp; DSA</h2>
+          <h2 className="text-2xl font-semibold mb-1 gradient-text">Problem Solving &amp; DSA</h2>
           <p className="text-sm muted">Live LeetCode stats, fetched server-side with ISR.</p>
         </div>
         <Link

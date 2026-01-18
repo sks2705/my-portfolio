@@ -17,17 +17,9 @@ export default function ThemeToggle() {
         return
       }
 
-      // No saved preference -> follow system
-      const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
-      if (prefersDark) {
-        document.documentElement.classList.add('dark')
-        setTheme('dark')
-      } else {
-        document.documentElement.classList.remove('dark')
-        setTheme('light')
-      }
+      document.documentElement.classList.add('dark')
+      setTheme('dark')
     } catch (e) {
-      // ignore during SSR
     }
   }, [])
 

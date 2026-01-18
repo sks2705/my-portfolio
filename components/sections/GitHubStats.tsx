@@ -13,7 +13,7 @@ export default async function GitHubStats() {
     <section id="github" className="max-w-[1200px] mx-auto px-6 md:px-8 py-12">
       <div className="flex items-center justify-between gap-4 mb-6">
         <div>
-          <h2 className="text-2xl font-semibold mb-1">GitHub Activity</h2>
+          <h2 className="text-2xl font-semibold mb-1 gradient-text">GitHub Activity</h2>
           <p className="text-sm muted">
             Open-source work and experiments that support my AI, NLP, and app development projects.
           </p>

@@ -10,6 +10,7 @@ export default function Hero() {
     <section id="top" className="relative overflow-hidden">
       <div className="absolute inset-0 -z-10">
         <NeuralBackground />
+        <div className="spotlight" />
       </div>
 
       <div className="relative max-w-[1200px] mx-auto px-6 md:px-8 py-16 md:py-24">
@@ -18,7 +19,7 @@ export default function Hero() {
             <p className="text-xs font-semibold tracking-[0.2em] uppercase text-[var(--accent-primary)] mb-3">
               Personal AI Lab · Engineer&apos;s Notebook
             </p>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-3">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-3 gradient-text">
               {personal.name}
             </h1>
             <div className="text-lg md:text-xl lead mb-2">{personal.title}</div>
@@ -63,5 +64,4 @@ export default function Hero() {
     </section>
   )
 }
-
 

@@ -13,14 +13,13 @@
     "twitter": "",
     "website": "",
     "avatar": "SK",
-    "profileImage": "/profile-image.jpg",
+    "profileImage": "/images/profileImage-1768740687906-WhatsApp_Image_2025-04-18_at_22.17.30_2fe293a5.jpg",
     "heroImage": "/hero-image.jpg",
     "favicon": "/favicon.ico",
     "bio": "I am a B.Tech Computer Science student at SRM University with a strong focus on Artificial Intelligence, Natural Language Processing, and mobile app development. I enjoy building real-world AI systems such as AI-generated text detection models, chatbots, and farmer-centric applications using Flutter, Python, and deep learning.",
     "shortAbout": "I build AI & NLP systems, focusing on knowledge distillation and deploying efficient models, and I build Flutter apps that integrate ML models for real-world use.",
     "about": [
       "I work extensively with NLP, machine learning, and knowledge distillation to build efficient, task-specific language models.",
-
       "I enjoy developing Flutter-based applications integrated with AI backends, focusing on real-world problem solving and practical deployment."
     ],
     "specialties": [
@@ -33,68 +32,181 @@
     "resumeLink": "/data_files/resume.pdf",
     "cvLink": "/data_files/resume.pdf"
   },
-
   "stats": [],
- 
-
   "skills": {
     "categories": [
       {
         "name": "Programming Languages",
         "skills": [
-          { "name": "Python", "level": 90, "color": "from-green-500 to-emerald-500" },
-          { "name": "C", "level": 85, "color": "from-blue-500 to-indigo-500" },
-          { "name": "C++", "level": 80, "color": "from-purple-500 to-pink-500" },
-          { "name": "Dart", "level": 80, "color": "from-cyan-500 to-blue-500" }
+          {
+            "name": "Python",
+            "level": 90,
+            "color": "from-green-500 to-emerald-500"
+          },
+          {
+            "name": "C",
+            "level": 85,
+            "color": "from-blue-500 to-indigo-500"
+          },
+          {
+            "name": "C++",
+            "level": 80,
+            "color": "from-purple-500 to-pink-500"
+          },
+          {
+            "name": "Dart",
+            "level": 80,
+            "color": "from-cyan-500 to-blue-500"
+          }
         ]
       },
       {
         "name": "AI / Machine Learning",
         "skills": [
-          { "name": "Natural Language Processing", "level": 88, "color": "from-emerald-500 to-teal-500" },
-          { "name": "Knowledge Distillation", "level": 85, "color": "from-indigo-500 to-purple-500" },
-          { "name": "Deep Learning", "level": 80, "color": "from-pink-500 to-rose-500" },
-          { "name": "AI-generated Text Detection", "level": 90, "color": "from-slate-500 to-slate-700" }
+          {
+            "name": "Natural Language Processing",
+            "level": 88,
+            "color": "from-emerald-500 to-teal-500"
+          },
+          {
+            "name": "Knowledge Distillation",
+            "level": 85,
+            "color": "from-indigo-500 to-purple-500"
+          },
+          {
+            "name": "Deep Learning",
+            "level": 80,
+            "color": "from-pink-500 to-rose-500"
+          },
+          {
+            "name": "AI-generated Text Detection",
+            "level": 90,
+            "color": "from-slate-500 to-slate-700"
+          }
         ]
       },
       {
         "name": "Frameworks & Libraries",
         "skills": [
-          { "name": "TensorFlow / Keras", "level": 85, "color": "from-orange-500 to-red-500" },
-          { "name": "Scikit-learn", "level": 80, "color": "from-yellow-500 to-amber-500" },
-          { "name": "Hugging Face Transformers", "level": 88, "color": "from-violet-500 to-purple-600" }
+          {
+            "name": "TensorFlow / Keras",
+            "level": 85,
+            "color": "from-orange-500 to-red-500"
+          },
+          {
+            "name": "Scikit-learn",
+            "level": 80,
+            "color": "from-yellow-500 to-amber-500"
+          },
+          {
+            "name": "Hugging Face Transformers",
+            "level": 88,
+            "color": "from-violet-500 to-purple-600"
+          }
         ]
       },
       {
         "name": "App & Backend Development",
         "skills": [
-          { "name": "Flutter", "level": 85, "color": "from-sky-500 to-blue-500" },
-          { "name": "REST APIs", "level": 75, "color": "from-gray-500 to-gray-700" },
-          { "name": "SQLite", "level": 70, "color": "from-blue-600 to-indigo-700" }
+          {
+            "name": "Flutter",
+            "level": 85,
+            "color": "from-sky-500 to-blue-500"
+          },
+          {
+            "name": "REST APIs",
+            "level": 75,
+            "color": "from-gray-500 to-gray-700"
+          },
+          {
+            "name": "SQLite",
+            "level": 70,
+            "color": "from-blue-600 to-indigo-700"
+          }
         ]
       },
       {
         "name": "Tools & Platforms",
         "skills": [
-          { "name": "Google Colab", "level": 90, "color": "from-yellow-400 to-orange-500" },
-          { "name": "Git & GitHub", "level": 85, "color": "from-orange-500 to-red-500" },
-          { "name": "Hugging Face", "level": 88, "color": "from-fuchsia-500 to-pink-500" },
-          { "name": "Kaggle", "level": 80, "color": "from-cyan-500 to-blue-600" }
+          {
+            "name": "Google Colab",
+            "level": 90,
+            "color": "from-yellow-400 to-orange-500"
+          },
+          {
+            "name": "Git & GitHub",
+            "level": 85,
+            "color": "from-orange-500 to-red-500"
+          },
+          {
+            "name": "Hugging Face",
+            "level": 88,
+            "color": "from-fuchsia-500 to-pink-500"
+          },
+          {
+            "name": "Kaggle",
+            "level": 80,
+            "color": "from-cyan-500 to-blue-600"
+          }
         ]
       }
     ]
   },
-
-  "skillsSnapshot": ["AI / NLP", "Flutter", "Python", "Transformers", "ML Deployment"],
-
-  "projects": [
-    {"id": 1,"title": "AI-Generated Text Detection System","description": "A knowledge-distilled NLP model trained on the HC3 dataset to detect AI-generated versus human-written text. Built using a RoBERTa-large teacher and RoBERTa-base student model, optimized for efficiency and deployment.","image": "/projects/ai-text-detection.jpg","technologies": ["Python", "Transformers", "PyTorch", "Hugging Face"],"github": "","live": "","category": "AI / NLP","featured": true},
-    {"id": 2,"title": "AgriEasy 🌿","description": "A farmer-centric mobile application providing weather alerts, pest management, crop disease detection, and chatbot-based assistance. Includes multilingual support and image/video-based help desk for farmers.","image": "/projects/agrieasy.jpg","technologies": ["Flutter", "Python", "TensorFlow", "SQLite"],"github": "","live": "","category": "AgriTech / AI","featured": true},
-    {"id": 3,"title": "Hospital Booking System","description": "A C-based hospital booking and management system designed to handle patient registration, appointment scheduling, and record management efficiently.","image": "/projects/hospital-booking.jpg","technologies": ["C"],"github": "","live": "","category": "System Software","featured": false}
+  "skillsSnapshot": [
+    "AI / NLP",
+    "Flutter",
+    "Python",
+    "Transformers",
+    "ML Deployment"
   ],
-
+  "projects": [
+    {
+      "id": 1,
+      "title": "AI-Generated Text Detection System",
+      "description": "A knowledge-distilled NLP model trained on the HC3 dataset to detect AI-generated versus human-written text. Built using a RoBERTa-large teacher and RoBERTa-base student model, optimized for efficiency and deployment.",
+      "image": "/projects/ai-text-detection.jpg",
+      "technologies": [
+        "Python",
+        "Transformers",
+        "PyTorch",
+        "Hugging Face"
+      ],
+      "github": "",
+      "live": "",
+      "category": "AI / NLP",
+      "featured": true
+    },
+    {
+      "id": 2,
+      "title": "AgriEasy 🌿",
+      "description": "A farmer-centric mobile application providing weather alerts, pest management, crop disease detection, and chatbot-based assistance. Includes multilingual support and image/video-based help desk for farmers.",
+      "image": "/projects/agrieasy.jpg",
+      "technologies": [
+        "Flutter",
+        "Python",
+        "TensorFlow",
+        "SQLite"
+      ],
+      "github": "",
+      "live": "",
+      "category": "AgriTech / AI",
+      "featured": true
+    },
+    {
+      "id": 3,
+      "title": "Hospital Booking System",
+      "description": "A C-based hospital booking and management system designed to handle patient registration, appointment scheduling, and record management efficiently.",
+      "image": "/projects/hospital-booking.jpg",
+      "technologies": [
+        "C"
+      ],
+      "github": "",
+      "live": "",
+      "category": "System Software",
+      "featured": false
+    }
+  ],
   "experience": [],
-
   "education": [
     {
       "id": 1,
@@ -109,7 +221,6 @@
       ]
     }
   ],
-
   "certifications": [
     {
       "id": 1,
@@ -118,7 +229,7 @@
       "date": "",
       "credentialId": "",
       "link": "",
-      "image": "",
+      "image": "/images/certification-1768742269907-XoaefB.jpg",
       "featured": false
     },
     {
@@ -132,7 +243,6 @@
       "featured": false
     }
   ],
-
   "contactInfo": {
     "email": "",
     "phone": "",
@@ -147,7 +257,6 @@
     "availability": "Open to internships, research roles, and collaborations.",
     "responseTime": "Usually responds within a day."
   },
-
   "siteConfig": {
     "title": "Shivam Kumar Singh | AI & App Developer",
     "description": "B.Tech Computer Science student specializing in AI, NLP, knowledge distillation, and Flutter-based applications.",

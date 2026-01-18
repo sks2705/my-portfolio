@@ -12,7 +12,7 @@ export default function Skills() {
   ]
   return (
     <section id="skills" className="max-w-[1200px] mx-auto px-6 md:px-8 py-12">
-      <h2 className="text-2xl font-semibold mb-4">Skills</h2>
+      <h2 className="text-2xl font-semibold mb-4 gradient-text">Skills</h2>
 
       <div className="mb-6 flex flex-wrap gap-2">
         {snapshot.map((item: string) => (
@@ -56,4 +56,3 @@ export default function Skills() {
     </section>
   )
 }
-

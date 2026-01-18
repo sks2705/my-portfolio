@@ -12,7 +12,7 @@ export default function About() {
     <section id="about" className="max-w-[1200px] mx-auto px-6 md:px-8 py-12">
       <div className="grid md:grid-cols-2 gap-6">
         <div className="glass-card p-8 transition-transform duration-200 hover:scale-[1.02]">
-          <h2 className="text-2xl font-semibold mb-3">My Work Philosophy</h2>
+          <h2 className="text-2xl font-semibold mb-3 gradient-text">My Work Philosophy</h2>
           <p className="mb-4">{personal.bio}</p>
           <ul className="grid gap-2">
             {bullets.map(b => (
