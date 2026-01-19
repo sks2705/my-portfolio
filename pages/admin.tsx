@@ -3,6 +3,27 @@ import { useEffect, useState } from 'react'
 type AnyData = any
 type UploadType = 'profileImage' | 'heroImage' | 'resume' | 'cv' | 'certification'
 
+const presetSkills = [
+  { name: 'Python', level: 90, color: 'from-green-500 to-emerald-500' },
+  { name: 'C', level: 85, color: 'from-blue-500 to-indigo-500' },
+  { name: 'C++', level: 80, color: 'from-purple-500 to-pink-500' },
+  { name: 'Dart', level: 80, color: 'from-cyan-500 to-blue-500' },
+  { name: 'Natural Language Processing', level: 88, color: 'from-emerald-500 to-teal-500' },
+  { name: 'Knowledge Distillation', level: 85, color: 'from-indigo-500 to-purple-500' },
+  { name: 'Deep Learning', level: 80, color: 'from-pink-500 to-rose-500' },
+  { name: 'AI-generated Text Detection', level: 90, color: 'from-slate-500 to-slate-700' },
+  { name: 'TensorFlow / Keras', level: 85, color: 'from-orange-500 to-red-500' },
+  { name: 'Scikit-learn', level: 80, color: 'from-yellow-500 to-amber-500' },
+  { name: 'Hugging Face Transformers', level: 88, color: 'from-violet-500 to-purple-600' },
+  { name: 'Flutter', level: 85, color: 'from-sky-500 to-blue-500' },
+  { name: 'REST APIs', level: 75, color: 'from-gray-500 to-gray-700' },
+  { name: 'SQLite', level: 70, color: 'from-blue-600 to-indigo-700' },
+  { name: 'Google Colab', level: 90, color: 'from-yellow-400 to-orange-500' },
+  { name: 'Git & GitHub', level: 85, color: 'from-orange-500 to-red-500' },
+  { name: 'Hugging Face', level: 88, color: 'from-fuchsia-500 to-pink-500' },
+  { name: 'Kaggle', level: 80, color: 'from-cyan-500 to-blue-600' },
+]
+
 export default function Admin() {
   const [allowed, setAllowed] = useState(false)
   const [loading, setLoading] = useState(true)
@@ -857,7 +878,37 @@ export default function Admin() {
                   </div>
                   <div className="space-y-2">
                     {(cat.skills || []).map((sk: any, si: number) => (
-                      <div key={si} className="grid md:grid-cols-[1fr,120px,1fr,auto] gap-2 items-center">
+                      <div
+                        key={si}
+                        className="grid md:grid-cols-[150px,1fr,120px,1fr,auto] gap-2 items-center"
+                      >
+                        <select
+                          className="border rounded-md px-2 py-2 text-sm"
+                          value={presetSkills.find((p) => p.name === sk.name) ? sk.name : ''}
+                          onChange={(e) => {
+                            const value = e.target.value
+                            if (!value) return
+                            const preset = presetSkills.find((p) => p.name === value)
+                            if (!preset) return
+                            const next = [...(skills.categories || [])]
+                            const catNext = { ...(next[ci] || {}), skills: [...(cat.skills || [])] }
+                            catNext.skills[si] = {
+                              ...catNext.skills[si],
+                              name: preset.name,
+                              level: preset.level,
+                              color: preset.color,
+                            }
+                            next[ci] = catNext
+                            setSkills({ ...skills, categories: next })
+                          }}
+                        >
+                          <option value="">Preset</option>
+                          {presetSkills.map((p) => (
+                            <option key={p.name} value={p.name}>
+                              {p.name}
+                            </option>
+                          ))}
+                        </select>
                         <input
                           className="border rounded-md px-3 py-2 text-sm"
                           placeholder="Skill name"

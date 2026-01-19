@@ -21,7 +21,7 @@ export default function Contact() {
           <div>
             <div className="text-lg font-medium mb-1 gradient-text">Contact</div>
             <div className="muted mb-4">{info.availability}</div>
-            <div className="grid grid-cols-2 gap-3 mb-6">
+            {/* <div className="grid grid-cols-2 gap-3 mb-6">
               {social.github ? (
                 <a href={social.github} className="btn-outline px-3 py-2 flex items-center gap-2" target="_blank" rel="noreferrer">
                   <Icon name="github" /> GitHub
@@ -42,7 +42,7 @@ export default function Contact() {
                   <Icon name="email" /> Email
                 </a>
               ) : null}
-            </div>
+            </div> */}
             <div className="muted text-sm">{info.responseTime}</div>
           </div>
           <form className="grid gap-3">

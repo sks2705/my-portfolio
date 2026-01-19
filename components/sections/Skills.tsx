@@ -34,20 +34,14 @@ export default function Skills() {
                 {index + 1}
               </span>
             </div>
-            <div className="grid gap-3">
+            <div className="flex flex-wrap gap-2">
               {cat.skills.map((skill: any) => (
-                <div key={skill.name}>
-                  <div className="flex items-center justify-between text-sm mb-1">
-                    <span>{skill.name}</span>
-                    <span className="muted">{skill.level}%</span>
-                  </div>
-                  <div className="h-2.5 rounded-full bg-slate-200/70 dark:bg-slate-800/60 overflow-hidden">
-                    <div
-                      className={`h-full rounded-full transition-all duration-700 bg-gradient-to-r ${skill.color}`}
-                      style={{ width: `${skill.level}%` }}
-                    />
-                  </div>
-                </div>
+                <span
+                  key={skill.name}
+                  className="snapshot-chip text-xs font-semibold tracking-wide uppercase"
+                >
+                  {skill.name}
+                </span>
               ))}
             </div>
           </div>
