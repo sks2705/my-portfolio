@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import React from 'react'
 
 export default function ProjectCard({ project }: { project: any }) {
@@ -6,6 +7,17 @@ export default function ProjectCard({ project }: { project: any }) {
 
   return (
     <div className="glass-card p-4 transition-transform duration-200 hover:-translate-y-1">
+      {project.image ? (
+        <div className="mb-3 overflow-hidden rounded-md">
+          <Image
+            src={project.image}
+            alt={project.title}
+            width={400}
+            height={240}
+            className="h-40 w-full object-cover"
+          />
+        </div>
+      ) : null}
       <h4 className="font-medium mb-1">{project.title}</h4>
       <p className="text-sm muted mb-3">{project.description}</p>
       <div className="flex flex-wrap gap-2 mb-3">
